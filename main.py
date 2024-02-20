@@ -37,4 +37,5 @@ print("START")
 fun2(fun1, "Tekst do funkcji wewnetrznej")
 print("KONIEC")
 
+
 print("ZADANIE 5")
