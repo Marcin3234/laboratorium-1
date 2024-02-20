@@ -22,3 +22,4 @@ def a(b):
 print(a(2))
 
 print("ZADANIE 3")
+
