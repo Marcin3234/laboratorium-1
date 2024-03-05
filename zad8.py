@@ -1,7 +1,5 @@
-kwadraty = [x**2 for x in range(1, 11)]
+from functools import reduce
+lista  = [1, 2, 3, 4, 5]
+sum_of_numbers = reduce(lambda x, y: x + y, lista)
 
-lista_slow = ["jabłko", "gruszka", "banan", "truskawka", "malina"]
-dlugosci_slow = [len(slowo) for slowo in lista_slow]
-
-print("Pierwsze 10 liczb kwadratowych:", kwadraty)
-print("Długości słów:", dlugosci_slow)
+print(sum_of_numbers)

@@ -1,16 +1,6 @@
-#range
-for h in range(10):
-    print(h)
-#help
-def p(r):
-    '''
-    Funkcja pokazująca helpa
-    '''
+def apply_twice(func, value):
+    return func(func(value))
 
-help(p)
-#chr zamienia na ASCII
-print("Funkcja chr",chr(89))
-#hash zwraca wartosc hash
-print("Funkcja hash",hash(p))
-#abs liczba bezwgledna
-print("Funkcja abs",abs(h))
+
+result = apply_twice(lambda x: x + 2, 10)
+print(result)
