@@ -1,16 +1,8 @@
-#range
-for h in range(10):
-    print(h)
-#help
-def p(r):
-    '''
-    Funkcja pokazująca helpa
-    '''
+def double_list_elements(numbers):
+    return [x * 2 for x in numbers]
 
-help(p)
-#chr zamienia na ASCII
-print("Funkcja chr",chr(89))
-#hash zwraca wartosc hash
-print("Funkcja hash",hash(p))
-#abs liczba bezwgledna
-print("Funkcja abs",abs(h))
+original_list = [1, 2, 3, 4, 5]
+doubled_list = double_list_elements(original_list)
+
+print("Oryginalna lista:", original_list)
+print("Lista po podwojeniu:", doubled_list)
