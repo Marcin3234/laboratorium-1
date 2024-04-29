@@ -1,16 +1,5 @@
-#range
-for h in range(10):
-    print(h)
-#help
-def p(r):
-    '''
-    Funkcja pokazująca helpa
-    '''
-
-help(p)
-#chr zamienia na ASCII
-print("Funkcja chr",chr(89))
-#hash zwraca wartosc hash
-print("Funkcja hash",hash(p))
-#abs liczba bezwgledna
-print("Funkcja abs",abs(h))
+def sum_even_numbers(num_list):
+    return sum(num for num in num_list if num % 2 == 0)
+numbers = [1, 2, 3, 4, 5, 6]
+result = sum_even_numbers(numbers)
+print(result)
